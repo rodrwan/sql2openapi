@@ -97,7 +97,9 @@ sql2openapi/
 │   ├── generator/      # Generación del OpenAPI
 │   └── config/         # Lógica para leer config.yaml
 ├── bin/                # Binarios compilados
-├── schema.sql          # Archivo de ejemplo de entrada
+├── example/
+│   ├── schema.sql          # Archivo de ejemplo de entrada
+│   └── sql2openapi.yaml
 ├── config.yaml         # Archivo opcional de configuración
 └── README.md
 ```
