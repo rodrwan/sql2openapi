@@ -1,0 +1,32 @@
+security:
+  scheme: bearer
+  format: JWT
+  protected:
+    - path: /users
+      methods: [post, put, delete]
+    - path: /users/{id}
+      methods: [get, put, delete]
+customEndpoints:
+  - path: /login
+    method: post
+    summary: User login
+    requestSchema:
+      type: object
+      properties:
+        email:
+          type: string
+        password:
+          type: string
+      required: [email, password]
+    responseSchema:
+      type: object
+      properties:
+        token:
+          type: string
+  - path: /register
+    method: post
+    summary: Register a new user
+    requestSchema:
+      $ref: "#/components/schemas/users"
+    responseSchema:
+      $ref: "#/components/schemas/users"
