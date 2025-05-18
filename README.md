@@ -116,11 +116,6 @@ sql2openapi/
 
 ## 🧑‍💻 Autor
 
-Desarrollado por [Tu Nombre Aquí]  
+Desarrollado por Rodrigo Fuenzalida
 ¡Con cariño, en Go 🦫!
 
----
-
-## 📜 Licencia
-
-MIT License — libre de usar, modificar y compartir.
